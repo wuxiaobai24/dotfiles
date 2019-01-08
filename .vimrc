@@ -1,4 +1,4 @@
-et nohlsearch
+set nohlsearch
 set ai
 set bg=dark
 set showmatch
@@ -20,3 +20,4 @@ map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
+set number

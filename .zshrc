@@ -99,3 +99,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+
+[[ -s "/home/wuxiaobai24/.gvm/scripts/gvm" ]] && source "/home/wuxiaobai24/.gvm/scripts/gvm"

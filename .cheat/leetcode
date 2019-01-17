@@ -1,0 +1,22 @@
+# list the questions
+
+## D: not AC
+## L: not lock
+## -t : filter by gived tag
+## -s : show the statistic
+
+leetcode list -q DL
+
+# show the questions
+
+## -g : generate the source file
+## -x : add question description in the generated source file
+## -e : open editor
+## -l : choose the language
+## if not id/name, a random question will be selected
+
+leetcode show 1 -gxe -l cpp
+
+# show solution.discuss
+
+leetcode show 1 --solution -l cpp

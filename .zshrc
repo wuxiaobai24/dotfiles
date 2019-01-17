@@ -64,7 +64,7 @@ ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git z zsh-syntax-highlighting zsh-autosuggestions 
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -100,4 +100,22 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-[[ -s "/home/wuxiaobai24/.gvm/scripts/gvm" ]] && source "/home/wuxiaobai24/.gvm/scripts/gvm"
+# [[ -s "/home/wuxiaobai24/.gvm/scripts/gvm" ]] && source "/home/wuxiaobai24/.gvm/scripts/gvm"
+
+eval $(thefuck --alias)
+source /etc/profile.d/conda.sh
+
+export EDITOR=/usr/bin/vim
+export CHEATCOLORS=true
+
+jupyter-run-gpu() {
+    conda activate tensorflow
+    nohup optirun jupyter-notebook > ~/jupyter-nohup.out &
+    conda deactivate
+}
+alias n-smi="optirun nvidia-smi"
+alias free="free -m"
+alias df="df -h"
+alias cp="cp -i"
+alias more=less
+alias wttr="curl wttr.in"

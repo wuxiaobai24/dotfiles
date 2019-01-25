@@ -71,6 +71,8 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+
 
 call plug#end()
 

@@ -119,3 +119,8 @@ alias df="df -h"
 alias cp="cp -i"
 alias more=less
 alias wttr="curl wttr.in"
+
+# for GOPATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+

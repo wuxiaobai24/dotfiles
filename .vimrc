@@ -78,8 +78,8 @@ call plug#end()
 
 let g:airline_theme='murmur'
 let g:rainbow_active = 1
-let g:ycm_global_ycm_extra_conf='~/.vim/plugged/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
+let g:ycm_global_ycm_extra_conf='~/.vim/plugged/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 
 colorscheme solarized8

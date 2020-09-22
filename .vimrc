@@ -1,4 +1,7 @@
 set nohlsearch
+set nocompatible
+filetype plugin on
+
 set ai
 set bg=dark
 color desert
@@ -73,13 +76,59 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
+Plug 'vim-scripts/taglist.vim'
+
+Plug 'Yggdroot/indentLine'
+Plug 'jiangmiao/auto-pairs'
+Plug 'vimwiki/vimwiki', { 'branch': 'dev'  }
+
+Plug 'lervag/vimtex'
+Plug 'preservim/nerdcommenter'
+
+Plug 'wakatime/vim-wakatime'
 
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
 
 let g:airline_theme='murmur'
 let g:rainbow_active = 1
 
-let g:ycm_global_ycm_extra_conf='~/.vim/plugged/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/youcompleteme/.ycm_extra_conf.py'
 
+colorscheme molokai
 
-colorscheme solarized8
+" for taglist
+
+let Tlist_Show_One_File = 1
+let Tlist_WinWidth = 40
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 1
+
+noremap <F8> :TlistToggle<CR>
+
+" for NERDTree
+autocmd vimenter * if !argc()|NERDTree|endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+noremap <C-n> :NERDTreeToggle<CR>
+
+" for indentLine
+let g:indentLine_char = '┆'
+let g:indentLine_enabled = 1
+
+" for vimtex
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+
+" for vim-go
+let g:go_fmt_command = "goimports"
+
+" leader key
+
+" for nerdcommenter
+let g:NERDSpaceDelim = 1

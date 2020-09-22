@@ -110,7 +110,7 @@ export CHEATCOLORS=true
 
 jupyter-run-gpu() {
     conda activate tensorflow
-    nohup optirun jupyter-notebook > ~/jupyter-nohup.out &
+    nohup optirun jupyter notebook > ~/jupyter-nohup.out &
     conda deactivate
 }
 alias n-smi="optirun nvidia-smi"
@@ -124,3 +124,41 @@ alias wttr="curl wttr.in"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+# for go proxy
+export GOPROXY=https://goproxy.io
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH=$PATH:/home/wuxiaobai24/.local/bin
+
+# for v2raypro-config
+go-ping-init() {
+    sudo sysctl -w net.ipv4.ping_group_range="0   2147483647"
+}
+
+# for pipenv 
+export PIPENV_PYPI_MIRROR=https://mirrors.aliyun.com/pypi/simple/
+run_proxy_server() {
+    privoxy --no-daemon ~/Documents/privoxy-forward.config
+}
+
+alias xclip="xclip -selection clipboard"
+alias pc=proxychains
+
+# for flutter
+export PATH=$PATH:/home/wuxiaobai24/flutter/flutter/bin
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+# source /usr/share/nvm/init-nvm.sh
+
+export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node
+alias gf=gf
+init-iw() {
+    sudo iw dev wlo1 del && sudo iw phy phy0 interface add wlo1 type managed
+}
+source /usr/share/nvm/init-nvm.sh
+
+# for bat
+export BAT_STYLE=Dracula
+alias ccat=bat

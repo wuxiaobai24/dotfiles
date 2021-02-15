@@ -13,6 +13,11 @@ ohmyzsh() {
 	source ~/.zshrc
 }
 
+nodejs() {
+	echo "install n"
+	curl -L https://git.io/n-install | bash
+}
+
 init_ubuntu_env() {
 	echo "apt update"
 	sudo apt-get update

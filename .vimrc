@@ -8,6 +8,7 @@ filetype plugin on
 set number
 syntax on
 
+color desert
 " vim-plug
 " 
 " install vim-plug for neovim

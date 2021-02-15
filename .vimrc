@@ -1,14 +1,36 @@
 " Basic vim setting
 
 set nocompatible
+set number
+syntax on
 filetype on
 filetype indent on
 filetype plugin on
-
-set number
-syntax on
-
 color desert
+
+" Tab and Indent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+set autoindent
+set smartindent
+set cindent
+
+" ref:
+"    http://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+autocmd FileType vim setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+
+" Display tab and trail space
+set list
+set listchars=tab:>-,trail:.
+" Not display above list
+nmap <leader>l :set list!<CR>"
+
 " vim-plug
 " 
 " install vim-plug for neovim

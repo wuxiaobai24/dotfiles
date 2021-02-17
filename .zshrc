@@ -133,3 +133,17 @@ export export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# clash
+alias clash-cli="bash $HOME/.local/share/clash/clash.sh"
+export clashdir="$HOME/.local/share/clash"
+
+proxystart() {
+  export all_proxy=http://127.0.0.1:7890
+  export ALL_PROXY=$all_proxy
+}
+
+proxystop() {
+  export all_proxy=""
+  export ALL_PROXY=$all_proxy
+}

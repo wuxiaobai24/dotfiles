@@ -35,6 +35,9 @@ init_ubuntu_env() {
 	ohmyzsh
 	nodejs
 	setupvim
+	
+	ssh-keygen -q -t rsa -b 4096 -N '' <<< ""$'\n'"y" 2>&1 >/dev/null
+	yadm remote set-url origin git@github.com:wuxiaobai24/dotfiles.git
 }
 
 main() {

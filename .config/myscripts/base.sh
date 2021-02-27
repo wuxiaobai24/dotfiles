@@ -44,7 +44,7 @@ init_ubuntu_env() {
 	sudo apt-get update
 	sudo apt-get -y upgrade
 	echo "install some package"
-	sudo apt-get install -y vim wget lsb-core curl zsh nodejs npm python3-venv python3-pip tmux mosh clangd htop fontconfig axel
+	sudo apt-get install -y vim wget lsb-core curl zsh nodejs npm python3-venv python3-pip tmux mosh clangd htop fontconfig axel unzip
 
 	ohmyzsh
 	nodejs

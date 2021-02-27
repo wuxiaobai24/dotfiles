@@ -134,7 +134,9 @@ export export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# clash
+# clash shell
+# sh -c "$(curl -kfsSl https://cdn.jsdelivr.net/gh/juewuy/ShellClash@master/install.sh)" && source /etc/profile &> /dev/null
+#
 alias clash-cli="bash $HOME/.local/share/clash/clash.sh"
 export clashdir="$HOME/.local/share/clash"
 

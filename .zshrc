@@ -131,6 +131,9 @@ export PATH=$PATH:$HOME/flutter/flutter/bin
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
+# tj/z
+# yay -S node-z
+export N_PREFIX=~/.local/
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

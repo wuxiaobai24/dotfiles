@@ -31,6 +31,7 @@ set listchars=tab:>-,trail:.
 " Not display above list
 nmap <leader>l :set list!<CR>"
 
+
 " vim-plug
 " 
 " install vim-plug for neovim
@@ -68,6 +69,10 @@ Plug 'luochen1990/rainbow'
 
 " Language
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"Wakatime
+Plug 'wakatime/vim-wakatime'
+
 call plug#end()
 
 colorscheme gruvbox
@@ -149,7 +154,7 @@ vnoremap <C-_> <Plug>NERDCommenterToggle<CR>gv
 " ===============================================
 
 " personal
-let g:coc_global_extensions = ['coc-clangd', 'coc-cmake', 'coc-yaml', 'coc-git','coc-jedi', 'coc-sh', 'coc-json']
+let g:coc_global_extensions = ['coc-clangd', 'coc-cmake', 'coc-yaml', 'coc-git','coc-jedi', 'coc-sh', 'coc-json', 'coc-lists']
 
 " TextEdit might fail if hidden is not set.
 set hidden

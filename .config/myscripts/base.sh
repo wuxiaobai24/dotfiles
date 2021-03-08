@@ -55,9 +55,20 @@ init_ubuntu_env() {
 	yadm remote set-url origin git@github.com:wuxiaobai24/dotfiles.git
 }
 
+function init_arch_env() {
+	echo "pacman update"
+	sudo pacman -Syyu
+	sudo pacman -S yay zsh tmux
+	yay -S nodejs-n
+	ohmyzsh
+}
+
 main() {
 	if [ "$distro" == "Ubuntu" ]; then
 		init_ubuntu_env
+	fi
+	if [ "$distro" == "Arch" ]; then
+		init_arch_env
 	fi
 }
 

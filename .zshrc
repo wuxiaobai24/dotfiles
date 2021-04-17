@@ -33,3 +33,5 @@ zinit snippet OMZ::plugins/git/git.plugin.zsh
 # 加载 pure 主题
 zinit ice pick"async.zsh" src"pure.zsh"
 zinit light sindresorhus/pure
+
+source $HOME/.config/zsh/base.zsh

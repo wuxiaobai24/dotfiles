@@ -1,5 +1,6 @@
 " Basic vim setting
 
+inoremap jk <Esc>
 set nocompatible
 set number
 syntax on
@@ -69,6 +70,7 @@ Plug 'luochen1990/rainbow'
 
 " Language
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
 
 "Wakatime
 Plug 'wakatime/vim-wakatime'

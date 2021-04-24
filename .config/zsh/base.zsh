@@ -10,4 +10,4 @@ export GOPROXY=https://goproxy.io
 
 # tj/z
 export N_PREFIX=~/.local/
-export PATH=$N_PREFIX/bin:$PATH
+# export PATH=$N_PREFIX/bin:$PATH

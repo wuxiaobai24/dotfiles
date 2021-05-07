@@ -7,6 +7,7 @@ export PATH=$PATH:$HOME/.local/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export GOPROXY=https://goproxy.io
+export GO111MODULE=on
 
 # tj/z
 export N_PREFIX=~/.local/

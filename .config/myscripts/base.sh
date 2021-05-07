@@ -44,9 +44,12 @@ init_ubuntu_env() {
 	sudo apt-get update
 	sudo apt-get -y upgrade
 	echo "install some package"
-	sudo apt-get install -y vim wget lsb-core curl zsh nodejs npm python3-venv python3-pip tmux mosh clangd htop fontconfig axel unzip
+	sudo apt-get install -y vim wget lsb-core curl zsh nodejs npm python3-venv python3-pip tmux mosh clangd htop fontconfig axel unzip lua5.3
 
-	ohmyzsh
+	#ohmyzsh
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+
+	
 	nodejs
 	setupvim
 	setupfont

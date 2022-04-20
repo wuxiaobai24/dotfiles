@@ -77,7 +77,10 @@ Plug 'wakatime/vim-wakatime'
 
 call plug#end()
 
-colorscheme gruvbox
+try
+  colorscheme gruvbox
+  catch
+endtry
 
 " ===============================================
       "                  indentLine

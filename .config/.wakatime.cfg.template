@@ -6,7 +6,7 @@ ignore        = """
     PULLREQ_EDITMSG$
     MERGE_MSG$
     TAG_EDITMSG$"""
-api_key=
+api_key=12345678
 
 [internal]
 backoff_at      = 
